@@ -90,12 +90,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@picocss/pico/css/pico.min.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8ed0dac4-8289-43d8-809d-664eddb00c29"
   }
 }

@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { SignupComponent } from './signup/signup.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  styleUrls: ['./app.component.scss'],
+  imports: [CommonModule, NavbarComponent, TodoListComponent,SignupComponent]
 })
 export class AppComponent {
-  title = 'mon-app';
+  title: string = 'Adam';
 }
+
+
