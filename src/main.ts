@@ -1,20 +1,10 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
-import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
-import { provideAuth, getAuth } from '@angular/fire/auth';
-import { provideFirestore, getFirestore } from '@angular/fire/firestore';
-import { importProvidersFrom } from '@angular/core';
-import { AngularFireModule } from '@angular/fire/compat';
-import { FormsModule } from '@angular/forms';
-import { environment } from './environments/environment';
-import { BrowserModule } from "@angular/platform-browser";
+/*import { bootstrapApplication } from '@angular/platform-browser';
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    importProvidersFrom(BrowserModule, FormsModule, AngularFireModule.initializeApp(environment.firebaseConfig)),
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
-  ]
-}).catch(err => console.error(err));
+bootstrapApplication(AppComponent, appConfig)
+  .catch((err) => console.error(err));*/
 
+  import { platformBrowserDynamic }  from '@angular/platform-browser-dynamic';
+  import { AppModule } from './app/app.module';
+
+  platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch((err) => console.error(err));

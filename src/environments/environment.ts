@@ -1,7 +1,7 @@
 export const environment ={
 
  production: false,
- firebaseConfig : {
+ firebase: {
   apiKey: "AIzaSyBj4UAI6FlHhowczpqj5_kQgC8M1p0I1uo",
   authDomain: "todo-list-angularfire.firebaseapp.com",
   projectId: "todo-list-angularfire",
