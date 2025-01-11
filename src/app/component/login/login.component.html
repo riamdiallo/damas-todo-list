@@ -4,9 +4,9 @@
     <div class="col-4">
       <div class="card shadow">
         <div class="card-body">
-          <form (ngSubmit)="register()" #registerForm="ngForm">
+          <form (ngSubmit)="login()" #loginForm="ngForm">
             <div class="mb-3">
-              <h4 class="text-dark text-muted">Register</h4>
+              <h4 class="text-dark text-muted">Login</h4>
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -16,10 +16,13 @@
               <label for="exampleInputPassword1" class="form-label">Password</label>
               <input type="password" class="form-control" name="password" [(ngModel)]="password" required title="Enter your password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary" [disabled]="!registerForm.form.valid">Register</button>
+            <button type="submit" class="btn btn-info" [disabled]="!loginForm.form.valid">Login</button>
             <div class="row mt-3">
-              <div class="col-md-12 text-center">
-                <a routerLink="/login" style="text-decoration: none;">Have an account? <span class="text-primary">Log in</span></a>
+              <div class="col-md-6">
+                <a routerLink="/register" class="text-danger" style="text-decoration: none;">Need an account? Register</a>
+              </div>
+              <div class="col-md-6">
+                <a href="#" class="text-dark" style="text-decoration: none;">Forgot Password?</a>
               </div>
             </div>
           </form>

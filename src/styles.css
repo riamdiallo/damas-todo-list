@@ -1,63 +1,24 @@
-/*@import '~@picocss/pico/css/pico.min.css';*/
-.main-container {
-  background-image: url('assets/images/image1.avif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display:flex;
-  flex-direction:row;
-  align-items: center;
-  padding: 4rem;
-  justify-content: flex-end;
-}
-.task-list{
-  flex: 1;
-  margin: 1rem;
-  /*background-color: #e9ecef;*/
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  width: 400px;
-  height: 100px;
-
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
-.add-task {
-  flex: 1;
-  margin: 1rem;
-  background-color: #e9ecef;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  justify-content: center;
-  align-items: center;
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
-.add-task-button{
-  /*display:block;
-  width: 100%;
-  padding: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background:linear-gradient(135deg, #ff4a9d, #00bfff);
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0,0,0.1);
-  cursor: pointer;
-  /*transition: background 0.3s ease,box-shadow 0.3s ease;*/
+p {
+  line-height: 1.5;
 }
-.add-task-button:hover{
-  background-color: #0056b3;
+
+a {
+  color: #007bff;
+  text-decoration: none;
 }
-.plus-icon{
-  font-size: 24px;
-  color: white;
+
+a:hover {
+  text-decoration: underline;
 }

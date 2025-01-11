@@ -1,8 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router"
-//import { TodoListComponent } from "./todo-list/todo-list.component";
-//import {NavbarComponent } from "./navbar/navbar.component";
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
@@ -10,8 +8,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from "../environments/environment";
 import { AppRoutingModule } from './app-routing.module';
-//import { DashboardComponent } from "./dashboard/dashboard.component";
- import{FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -24,11 +21,6 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     FormsModule,
     RouterModule
-
-    //SignupComponent,
-   // NavbarComponent,
-    //TodoListComponent
-
    ],
 
    providers: [
@@ -36,14 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
        provideAuth(() => getAuth()),
        provideFirestore(() => getFirestore()),
        provideStorage(() => getStorage())
-
    ],
-
-    /*providers:[
-    provideFirebaseApp(() => initializeApp({"projectId":"todo-list-angularfire","appId":"1:991723699662:web:363353af34a167d9a2bf9f","storageBucket":"todo-list-angularfire.firebasestorage.app","apiKey":"AIzaSyBj4UAI6FlHhowczpqj5_kQgC8M1p0I1uo","authDomain":"todo-list-angularfire.firebaseapp.com","messagingSenderId":"991723699662"})),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
-  ],*/
 })
 
 export class AppModule {}
